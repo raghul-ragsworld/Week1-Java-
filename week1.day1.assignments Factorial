@@ -14,7 +14,7 @@ public class Factorial {
 	 *   
 	 * What are my learnings from this code?
 	 * 1) If we need an last loop ans then we need to place the print to out side of loop to get an single ans
-	 * 2) Factorial concept and calc
+	 * 2) Factorial concept
 	 * 3) 
 	 * 
 	 */	
