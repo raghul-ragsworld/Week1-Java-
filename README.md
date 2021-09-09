@@ -11,7 +11,10 @@ public class FibonacciSeries {
 	 * create a 'for' loop: type 'for', followed by ctrl + space + down arrow +
 	 * enter
 	 * 
-	 * What are my learnings from this code? 1) 2) 3)
+	 * What are my learnings from this code? 
+	 1) How codes execute line by line  
+	 2) How Assignment operator performs
+	 3) How values changes by executing the code line by line
 	 * 
 	 */
 
