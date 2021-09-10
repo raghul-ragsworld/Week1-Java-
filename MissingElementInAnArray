@@ -1,0 +1,22 @@
+package week1.day1.assignments;
+
+
+
+public class MissingElementInAnArray {
+
+	public static void main(String[] args) {
+		int[] arr = {1,2,3,4,7,6,8};
+		System.out.println("Total sum: "+ arr.length);
+		int i=arr.length+1;
+		int total=i*(i+1)/2;
+		int sum=0;
+		System.out.println("Total sum: "+ i);	
+		System.out.println("Total sum: "+ total);
+		for(int j=0;j<arr.length;j++)
+		{
+			sum=sum+arr[j];
+		}
+		System.out.println(total-sum);
+	}
+
+}
