@@ -1,0 +1,25 @@
+package week1.day1.assignments;
+
+public class ArmStrongNumber {
+
+	public static void main(String[] args) {
+		int armStrongNum=153;
+		int i,j=0,k=0;
+		int sum=0;
+		while(armStrongNum!=0)
+		{
+			i=armStrongNum/10;
+			j=armStrongNum%10;
+			sum=sum+j*j*j;
+			armStrongNum=i;
+		    
+		}
+		if (sum!=0)
+		{
+			System.out.println("This is armstrong: " + sum);
+		}else
+			System.out.println("This is not armstrong: " + sum);
+		
+	}
+
+}
