@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select; 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -23,7 +24,7 @@ public class LaunchBrowser {
 		//driver.close(); // step 7
 		driver.findElement(By.linkText("Leads")).click();
 		driver.findElement(By.linkText("Create Lead")).click();
-		WebElement idcreateLeadForm_companyName=driver.findElement(By.id("idcreateLeadForm_companyName"));
+		WebElement idcreateLeadForm_companyName=driver.findElement(By.id("createLeadForm_companyName"));
 		idcreateLeadForm_companyName.sendKeys("Tata Group");
 		driver.findElement(By.id("createLeadForm_firstName")).sendKeys("Chandrasekar");
 		driver.findElement(By.id("createLeadForm_firstNameLocal")).sendKeys("chandru");
@@ -54,6 +55,8 @@ public class LaunchBrowser {
 		driver.findElement(By.id("createLeadForm_generalCity")).sendKeys("Chennai");
 		driver.findElement(By.id("createLeadForm_generalPostalCode")).sendKeys("600118");
 		driver.findElement(By.id("createLeadForm_generalPostalCodeExt")).sendKeys("118");
+		Select dropdown = new Select(driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId")));  
+		dropdown.selectByVisibleText("Alabama");  
 		driver.findElement(By.className("smallSubmit")).click();
 	}
 	
